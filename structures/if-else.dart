@@ -19,7 +19,10 @@ void main(List<String> args) {
     .nextInt(11);
 
     switch(grade) {
-    case 1: {
+    case 1: case 3: 
+    case 4: { // all cases will fall in the same block
+      ;
+      ;
       ;
       break;
     }
