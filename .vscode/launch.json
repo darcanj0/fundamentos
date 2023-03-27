@@ -6,7 +6,7 @@
     "configurations": [
         {
             "name": "Dart",
-            "program": "structures/for1.dart",
+            "program": "structures/while.dart",
             "request": "launch",
             "type": "dart"
         }
