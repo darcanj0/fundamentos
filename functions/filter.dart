@@ -11,4 +11,18 @@ void main(List<String> args) {
 
   print(grades);
   print(goodGrades);
+
+  var goodGradesAlso = filter(grades, goodGrade);
+  print(goodGradesAlso);
+}
+
+// a more procedural approach
+List<T> filter<T>(List<T> list, bool Function(T) fn) {
+  List<T> filtered = [];
+
+  for (T element in list) {
+    if (fn(element)) filtered.add(element);
+  }
+
+  return filtered;
 }
