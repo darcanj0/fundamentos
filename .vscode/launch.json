@@ -6,7 +6,7 @@
     "configurations": [
         {
             "name": "Dart",
-            "program": "structures/while.dart",
+            "program": "functions/map-reduce.dart",
             "request": "launch",
             "type": "dart"
         }
