@@ -20,5 +20,6 @@ int randomNumberNamed({int max = 10}) { // named optional parameter with defined
 }
 
 int makeItRandom(int? max) { //max will be of type int|null
+  // doesnt need to be called in definition order
   return Random().nextInt(max ?? 10);
 }
