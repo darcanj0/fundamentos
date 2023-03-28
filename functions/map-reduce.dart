@@ -22,17 +22,13 @@ void main(List<String> args) {
 
 
   //reduce
-  double Function(Map)
-  onlyTheGrades = (student) => student['grade'];
-
-  var grades = students
-    .map(onlyTheGrades)
-    .toList();
-
   double Function(double, double)
   sum = (accumulator, element) => accumulator + element;
 
-  var gradesSum = grades
+  var gradesSum = students
+    .map((student) => student['grade'] as double)
     .reduce(sum); 
+
   print(gradesSum);
+  print("Average is ${gradesSum / students.length}");
 }
